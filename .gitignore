@@ -1,0 +1,9 @@
+.idea
+
+# OSX
+.DS_STORE
+
+# Terraform
+.terraform
+terraform/var.tfvars
+config.yaml
