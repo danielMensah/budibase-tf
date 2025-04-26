@@ -59,3 +59,12 @@ The `setup_nginx.sh` script performs the following tasks:
   ```
 - The script will install Nginx and configure it to serve the Budibase application.
 - Once the script is done, you can access the Budibase application by visiting the domain name you set in the `config.yaml` file.
+
+## Upgrading Budibase Version
+To upgrade Budibase version, ssh into the Droplet console and following the steps below:
+
+1. Stop the container: `docker-compose stop`.
+2. Pull updates: `docker-compose pull`.
+3. Restart the container: `docker-compose up -d`.
+
+Keep in mind that this will make your Budibase site temporary unavailable until it has been restarted. It should take less that 5 minutes in total.
